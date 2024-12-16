@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        justify-items: center;
+        margin-left: 40vw;
+        height: 100vh;
+        background-color: #f1f1f1;
+      }
+      .container {
+        background-color: aqua;
+        height: fit-content;
+        text-align: center;
+        padding: 10px;
+      }
+      #btt {
+        margin-top: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: red;
+      }
+      #btt:hover{
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Game</h1>
+      <p>This is a game for guset random number</p>
+      <h3 id="number"></h3>
+      <input id="inputval" value="" type="text">
+      <button id="btt" onclick="random()">click me</button>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>
